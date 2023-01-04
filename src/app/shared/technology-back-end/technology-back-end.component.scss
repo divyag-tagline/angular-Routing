@@ -1,0 +1,23 @@
+.backend {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.backend div {
+    padding: 40px;
+}
+
+.backend img {
+    height: 50px;
+    max-width: 100px;
+}
+
+.backend h3 {
+    font-weight: 300;
+    text-align: center;
+}
+
+img {
+    width: 45px;
+    height: 45px;
+}

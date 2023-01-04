@@ -7,7 +7,11 @@ import { ExperienceDetailsRight } from 'src/app/common';
   styleUrls: ['./experience-card.component.scss']
 })
 export class ExperienceCardComponent implements OnInit {
-  @Input() expProfessional: any = [];
+  @Input() expProfessional: ExperienceDetailsRight = {
+    img: '',
+    heading: '',
+    heading1: ''
+  };
   constructor() { }
 
   ngOnInit(): void {

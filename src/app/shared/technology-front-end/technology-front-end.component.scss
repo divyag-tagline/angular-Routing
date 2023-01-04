@@ -1,0 +1,24 @@
+.frontend {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: max-content;
+}
+
+.frontend div {
+    padding: 45px 42px 20px 40px;
+}
+
+.frontend img {
+    height: 50px;
+    max-width: 100px;
+}
+
+.frontend h3 {
+    font-weight: 300;
+    text-align: center;
+}
+
+img{
+    width: 45px;
+    height:45px
+}
