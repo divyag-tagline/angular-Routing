@@ -1,0 +1,40 @@
+ul {
+    display: block;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    padding: 33px 10px 10px 53px;
+}
+
+/* .row .menu ul li.active,
+li:hover {
+    border: 2px dotted #d66f37;
+} */
+
+// ul li:first-child {
+//     box-shadow: inset 7px 0em #D96122;
+// }
+
+// ul li:first-child a {
+//     color: #d66f37;
+
+// }
+
+ul li a {
+
+    text-decoration: none;
+    color: #404040;
+    font-size: 1.3rem;
+    line-height: 1.5;
+
+}
+
+ul li a:hover {
+    color: #d66f37;
+}
+
+ul li a:active {
+    color: #d66f37;
+}

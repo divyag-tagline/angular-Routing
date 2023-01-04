@@ -1,0 +1,301 @@
+<div class="topbar">
+  <div class="headtext">
+    <h1>
+      {{ headtext.headText }} <br />
+      & {{ headtext.headText1 }}
+    </h1>
+    <h1>
+      {{ headtext.headText3 }} <span>{{ headtext.headText4 }} </span>
+    </h1>
+    <p>
+      {{ headtext.headText5 }}
+      <br />
+      {{ headtext.headText6 }}
+    </p>
+    <button type="button">{{ headtext.headButton }}</button>
+    <img [src]="headtext.img" />
+  </div>
+</div>
+
+<!-- ___________________________________________________________ -->
+<!-- <div class="topbar">
+    <div class="header">
+      <nav>
+        <ul>
+          <img [src]="logo" />
+          <li>
+            <a href="/home">{{ caseStudy }}</a>
+          </li>
+          <li *ngFor="let header of headers">
+            <a [routerLink]="header.link"
+              ><label>{{ header.name }}</label></a
+            >
+          </li>
+          <div class="btnget">
+            <button type="button">
+              {{ buttonText }}
+            </button>
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <div class="headtext">
+      <h1>
+        {{ headtext.headText }} <br />
+        & {{ headtext.headText1 }}
+      </h1>
+      <h1>
+        {{ headtext.headText3 }} <span>{{ headtext.headText4 }} </span>
+      </h1>
+      <p>
+        {{ headtext.headText5 }}
+        <br />
+        {{ headtext.headText6 }}
+      </p>
+      <button type="button">{{ headtext.headButton }}</button>
+      <img [src]="headtext.img" />
+    </div>
+  </div>
+  <br />
+  <br /> -->
+<div class="services">
+  <h1>{{ service }}</h1>
+  <span class="headerline"></span>
+  <div class="boxes">
+    <div class="divcontent divcontent1" style="border: none">
+      <h1 style="text-align: left; line-height: 70px; font-weight: 700">
+        {{ serviceCard1.text1 }} <br />
+        <span style="font-weight: bolder; font-size: 60px">{{
+          serviceCard1.text2
+        }}</span>
+        <br />
+        {{ serviceCard1.text3 }}
+      </h1>
+    </div>
+    <ng-container *ngFor="let data of serviceCard2">
+      <app-service-card
+        [services]="data"
+        style="display: contents"
+      ></app-service-card>
+    </ng-container>
+    <div class="divcontent divcontent7">
+      <h2>
+        {{ serviceCard6.heading }}
+        <span style="font-weight: bold">{{ serviceCard6.span }}</span>
+      </h2>
+      <button>{{ serviceCard6.buttonText }}</button>
+    </div>
+  </div>
+</div>
+
+<!-- ___________________________________________________________ -->
+<div class="experience">
+  <div class="contentexp">
+    <h2>{{ experienceDetailsLeft.heading }}</h2>
+    <p>{{ experienceDetailsLeft.details }}</p>
+    <button>{{ experienceDetailsLeft.expButton }}</button>
+  </div>
+  <span>
+    <img [src]="experienceDetailsLeft.img" height="490" />
+  </span>
+  <div class="numberexp">
+    <div class="fulldiv1">
+      <ng-container *ngFor="let items of expProfessional">
+        <app-experience-card [expProfessional]="items"></app-experience-card>
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+<!-- ____________________________________________________________________ -->
+
+<h1 style="text-align: center; margin: 40px; font-size: 2rem; margin-bottom: 0">
+  {{ ourTechnologies }}
+</h1>
+<span class="headerline"></span>
+<div class="row">
+  <div class="menu">
+      <ng-container *ngFor="let tSidebar of technologySidebar">
+        <app-technology-sidebar
+          [technologySidebar]="tSidebar"
+        ></app-technology-sidebar>
+      </ng-container>
+  </div>
+  <div class="language">
+    <div class="web">
+      <h1>{{ technologySidebar[0] }}</h1>
+      <h2 style="margin-top: 20px; font-weight: 400">
+        {{ technologyBackEndIcon[0].backEnd }}
+      </h2>
+      <!-- <app-technology-back-end-icon
+          [technologyBackEndIcon]="technologyBackEndIcon"
+        ></app-technology-back-end-icon> -->
+
+      <h2>{{ technologyFrontEndIcon[0].backEnd }}</h2>
+      <!-- <app-technology-front-end-icon
+          [technologyFrontEndIcon]="technologyFrontEndIcon"
+        ></app-technology-front-end-icon> -->
+    </div>
+  </div>
+</div>
+
+<!-- ____________________________________________________________________ -->
+
+<h1 class="taglinewhyhead">{{ chooseTagline.title }}</h1>
+<span class="headerline"></span>
+<p class="taglinewhyp">{{ chooseTagline.details }}</p>
+<!-- <div class="empowers">
+    <app-box-cards-choose-tagline
+      [boxCards]="boxCards"
+      style="display: contents"
+    ></app-box-cards-choose-tagline>
+    <div
+      class="empowerbox lastempowerbox"
+      style="border-bottom: none; border-right: none"
+    >
+      <h1>
+        <span>{{ empowerboxLast.empower }}</span> {{ empowerboxLast.your }}
+        <span>{{ empowerboxLast.business }}</span> {{ empowerboxLast.heading }}
+      </h1>
+      <button>{{ empowerboxLast.boxButton }}</button>
+    </div>
+  </div> -->
+
+<!-- ____________________________________________________________________ -->
+
+<!-- <div class="reviews">
+    <div class="reviewword">
+      <h1>{{ ourClientele.title }}</h1>
+      <span class="headerline"></span>
+      <p>
+        {{ ourClientele.detail1 }}
+      </p>
+      <p>
+        {{ ourClientele.details2 }}
+      </p>
+    </div>
+    <app-rating-star-cards [ratingStars]="ratingStars"></app-rating-star-cards>
+  </div> -->
+
+<!-- ____________________________________________________________________ -->
+
+<!-- <div class="awards">
+    <!-- <div class="awardhead">
+    <h1>
+      {{ awardsRecognitions.heading1 }}<br />
+      {{ awardsRecognitions.heading2 }}
+    </h1>
+    <!-- </div
+    <app-award-icon
+      [awardsRecognitionsImg]="awardsRecognitionsImg"
+      style="display: flex"
+    ></app-award-icon>
+  </div> -->
+
+<!-- ____________________________________________________________________ -->
+
+<!-- <div class="blogs">
+    <h1>{{ ourBlogs[0].title }}</h1>
+    <span class="headerline"></span>
+    <div class="bloggers">
+      <app-blog-cards
+        [ourBlogs]="ourBlogs"
+        style="display: contents"
+      ></app-blog-cards>
+    </div>
+  </div> -->
+
+<!-- ____________________________________________________________________ -->
+
+<!-- <div class="contactus">
+    <div class="formdetail">
+      <div class="address">
+        <h4>{{ globalPresence[0].title }}</h4>
+  
+        <app-global-address
+          [globalPresence]="globalPresence"
+        ></app-global-address>
+  
+        <div class="place">
+          <a href="mailto:solutions@taglineinfotech.com" class="mail"
+            ><i class="bi bi-envelope-fill"></i>{{ globalPresence[2].gmail }}</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+      <h1>{{ formDetails.title }}</h1>
+      <input type="text" placeholder="Full Name" /><br />
+      <input type="text" placeholder="Phone" /><br />
+      <input type="email" placeholder="Email" /><br />
+      <textarea placeholder="Message" rows="3"></textarea><br />
+      <button>{{ formDetails.formButton }}</button>
+    </div>
+  </div> -->
+
+<!-- ____________________________________________________________________ -->
+
+<!-- <div class="footer">
+    <div class="firstfooter">
+      <div class="cont1">
+        <h3>{{ footerDetails.title }}</h3>
+        <p>
+          {{ footerDetails.heading }}
+          <span style="color: #d66f37">{{ footerDetails.heading1 }} </span>
+          {{ footerDetails.heading2 }}
+          <span style="color: #d66f37">{{ footerDetails.heading3 }}</span>
+        </p>
+      </div>
+      <div class="cont2">
+        <input type="text" placeholder="Email" /><span
+          ><button>{{ footerDetails.footerButton }}</button></span
+        >
+        <p>{{ footerDetails.details }}</p>
+      </div>
+    </div>
+    <div class="division">
+      <ng-container>
+        <app-footer-inquery-section
+          [footerHrInquiry]="footerHrInquiry"
+        ></app-footer-inquery-section>
+      </ng-container>
+      <div class="help">
+        <h3>{{ footerHelp[0].heading }}</h3>
+        <app-footer-help-section
+          [footerHelp]="footerHelp"
+        ></app-footer-help-section>
+      </div>
+      <div class="service">
+        <h3>Services</h3>
+        <app-footer-services-section
+          [footerServices]="footerServices"
+        ></app-footer-services-section>
+      </div>
+      <div class="hire">
+        <h3>Hire Developers</h3>
+        <app-footer-hire-devloper-section
+          [footerHireDevlopers]="footerHireDevlopers"
+        ></app-footer-hire-devloper-section>
+      </div>
+    </div>
+  
+    <div class="lastfooterdiv">
+      <img [src]="footerLastPortion.img" />
+  
+      <a href="" style="text-decoration: none; color: gray; font-size: 17px"
+        >{{ footerLastPortion.followUs }} <i class="bi bi-facebook p-2"></i>
+        <i class="bi bi-linkedin p-2"></i>
+        <i class="bi bi-twitter p-2"></i>
+        <i class="bi bi-instagram p-2"></i>
+        <i class="bi bi-globe p-2"></i>
+      </a>
+      <p>
+        {{ footerLastPortion.portion1
+        }}<span style="color: #d66f37"> {{ footerLastPortion.portion2 }}</span>
+        {{ footerLastPortion.portion3 }}
+        <a href="" style="text-decoration: none; color: #d66f37">{{
+          footerLastPortion.portion4
+        }}</a>
+      </p>
+    </div>
+  </div>  -->

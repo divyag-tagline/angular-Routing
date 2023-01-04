@@ -1,0 +1,41 @@
+.divcontent {
+    width: 456px;
+    height: 430px;
+    padding: 20px;
+    margin: 40px 20px;
+
+}
+
+.divcontent {
+    box-shadow: 5px 5px 75px rgb(0 0 0 / 10%);
+}
+
+.divcontent1 {
+    font-size: 6rem;
+    box-shadow: none;
+}
+
+.divcontent .flex {
+    display: flex;
+    align-items: center;
+}
+
+.divcontent p {
+    font-size: 19px;
+    font-family: poppins, sans-serif;
+    padding: 15px 25px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.divcontent a {
+    color: #D96122;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: poppins, sans-serif;
+    padding: 30px 25px;
+}

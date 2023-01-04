@@ -1,86 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: poppins, sans-serif;
-
-}
 
 .topbar {
-    height: 100vh;
+    height: max-content;
     width: 100%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(196, 196, 196, 0) .01%, rgba(217, 97, 34, .2) 100%), url(../assets/images/topimg.webp);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(196, 196, 196, 0) .01%, rgba(217, 97, 34, .2) 100%), url(/assets/images/topimg.webp);
 }
-
-ul {
-    display: flex;
-    position: sticky;
-}
-
-.header {
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    right: 0;
-    flex-wrap: wrap;
-    background-color: white;
-
-}
-
-.header nav img {
-    margin: 10px 8%;
-}
-
-nav ul li {
-    list-style-type: none;
-    padding: 25px 10px;
-    font-size: 18px;
-    font-family: sans-serif;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-nav ul li select {
-    border: none;
-    font-size: 18px;
-    font-family: sans-serif;
-
-}
-
-ul .btnget {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 38%;
-}
-
-nav ul button {
-    margin-top: 20px;
-    height: 45px;
-    // padding: 17px 28px;
-    border: none;
-    border-radius: 5px;
-    /* background-color: rgba(178, 28, 28, 0.593); */
-    background: rgba(217, 97, 34, .3);
-    color: #da6427;
-    min-width: 20%;
-    text-align: center;
-    cursor: pointer;
-}
-
-nav ul button:hover {
-    border-radius: 5px;
-    background-color: white;
-    transition: all .5s ease-in;
-    border: 1px solid #D96122;
-}
-
-/* ____________________________________________________________________ */
-
 .headtext h1 {
     font-size: 4rem;
     text-align: center;
@@ -125,10 +48,6 @@ nav ul button:hover {
     margin: auto;
     padding: 50px;
 }
-
-
-/* __________________________________________________________________ */
-
 
 .services h1 {
     text-align: center;
@@ -779,7 +698,7 @@ li:hover {
     height: 100%;
     /* background-image: url(product-bg.webp); */
     /* background-color: rgba(27, 67, 110, 0.6); */
-    background: linear-gradient(0deg, rgba(19, 54, 92, .85), rgba(23, 32, 85, 0.85)), url(../assets/images/product-bg.webp);
+    background: linear-gradient(0deg, rgba(19, 54, 92, .85), rgba(23, 32, 85, 0.85)), url(../../../../assets/images/product-bg.webp);
     position: relative;
     background-repeat: no-repeat;
     background-size: 100%;

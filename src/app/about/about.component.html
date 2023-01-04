@@ -1,0 +1,19 @@
+<h1 class="taglinewhyhead">{{ chooseTagline.title }}</h1>
+<span class="headerline"></span>
+<p class="taglinewhyp">{{ chooseTagline.details }}</p>
+<div class="empowers">
+  <!-- <app-box-cards-choose-tagline
+    [boxCards]="boxCards"
+    style="display: contents"
+  ></app-box-cards-choose-tagline> -->
+  <div
+    class="empowerbox lastempowerbox"
+    style="border-bottom: none; border-right: none"
+  >
+    <h1>
+      <span>{{ empowerboxLast.empower }}</span> {{ empowerboxLast.your }}
+      <span>{{ empowerboxLast.business }}</span> {{ empowerboxLast.heading }}
+    </h1>
+    <button>{{ empowerboxLast.boxButton }}</button>
+  </div>
+</div>
