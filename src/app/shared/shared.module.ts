@@ -6,6 +6,10 @@ import { ExperienceCardComponent } from './experience-card/experience-card.compo
 import { TechnologySidebarComponent } from './technology-sidebar/technology-sidebar.component';
 import { TechnologyBackEndComponent } from './technology-back-end/technology-back-end.component';
 import { TechnologyFrontEndComponent } from './technology-front-end/technology-front-end.component';
+import { BoxCardsChooseTaglineComponent } from './box-cards-choose-tagline/box-cards-choose-tagline.component';
+import { RatingStarsComponent } from './rating-stars/rating-stars.component';
+import { AwardIconComponent } from './award-icon/award-icon.component';
+import { BlogCardsComponent } from './blog-cards/blog-cards.component';
 
 
 @NgModule({
@@ -14,7 +18,11 @@ import { TechnologyFrontEndComponent } from './technology-front-end/technology-f
     ExperienceCardComponent,
     TechnologySidebarComponent,
     TechnologyBackEndComponent,
-    TechnologyFrontEndComponent
+    TechnologyFrontEndComponent,
+    BoxCardsChooseTaglineComponent,
+    RatingStarsComponent,
+    AwardIconComponent,
+    BlogCardsComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +32,11 @@ import { TechnologyFrontEndComponent } from './technology-front-end/technology-f
     ExperienceCardComponent,
     TechnologySidebarComponent,
     TechnologyBackEndComponent,
-    TechnologyFrontEndComponent
+    TechnologyFrontEndComponent,
+    BoxCardsChooseTaglineComponent,
+    RatingStarsComponent,
+    AwardIconComponent,
+    BlogCardsComponent
   ]
 
 })

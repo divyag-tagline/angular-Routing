@@ -151,66 +151,78 @@
 <h1 class="taglinewhyhead">{{ chooseTagline.title }}</h1>
 <span class="headerline"></span>
 <p class="taglinewhyp">{{ chooseTagline.details }}</p>
-<!-- <div class="empowers">
-    <app-box-cards-choose-tagline
+<div class="empowers">
+  <!-- <app-box-cards-choose-tagline
       [boxCards]="boxCards"
       style="display: contents"
+    ></app-box-cards-choose-tagline> -->
+
+  <ng-container *ngFor="let boxCard of boxCards">
+    <app-box-cards-choose-tagline
+      style="display: contents"
+      [boxCards]="boxCard"
     ></app-box-cards-choose-tagline>
-    <div
-      class="empowerbox lastempowerbox"
-      style="border-bottom: none; border-right: none"
-    >
-      <h1>
-        <span>{{ empowerboxLast.empower }}</span> {{ empowerboxLast.your }}
-        <span>{{ empowerboxLast.business }}</span> {{ empowerboxLast.heading }}
-      </h1>
-      <button>{{ empowerboxLast.boxButton }}</button>
-    </div>
-  </div> -->
+  </ng-container>
+  <div class="empowerbox lastempowerbox">
+    <h1>
+      <span>{{ empowerboxLast.empower }}</span> {{ empowerboxLast.your }}
+      <span>{{ empowerboxLast.business }}</span> {{ empowerboxLast.heading }}
+    </h1>
+    <button>{{ empowerboxLast.boxButton }}</button>
+  </div>
+</div>
 
 <!-- ____________________________________________________________________ -->
 
-<!-- <div class="reviews">
-    <div class="reviewword">
-      <h1>{{ ourClientele.title }}</h1>
-      <span class="headerline"></span>
-      <p>
-        {{ ourClientele.detail1 }}
-      </p>
-      <p>
-        {{ ourClientele.details2 }}
-      </p>
-    </div>
-    <app-rating-star-cards [ratingStars]="ratingStars"></app-rating-star-cards>
-  </div> -->
+<div class="reviews">
+  <div class="reviewword">
+    <h1>{{ ourClientele.title }}</h1>
+    <span class="headerline"></span>
+    <p>
+      {{ ourClientele.detail1 }}
+    </p>
+    <p>
+      {{ ourClientele.details2 }}
+    </p>
+  </div>
+  <div class="ratingStar">
+    <ng-container *ngFor="let ratingStar of ratingStars">
+      <app-rating-stars [ratingStars]="ratingStar"></app-rating-stars>
+    </ng-container>
+  </div>
+</div>
 
 <!-- ____________________________________________________________________ -->
 
-<!-- <div class="awards">
-    <!-- <div class="awardhead">
+<div class="awards">
+  <div class="awardhead">
     <h1>
       {{ awardsRecognitions.heading1 }}<br />
       {{ awardsRecognitions.heading2 }}
     </h1>
-    <!-- </div
+  </div>
+  <div class="awardimage" >
+  <ng-container *ngFor="let image of awardsRecognitionsImg">
     <app-award-icon
-      [awardsRecognitionsImg]="awardsRecognitionsImg"
+      [awardsRecognitionsImg]="image"
       style="display: flex"
     ></app-award-icon>
-  </div> -->
+  </ng-container>
+</div>
+</div>
 
 <!-- ____________________________________________________________________ -->
 
-<!-- <div class="blogs">
+<div class="blogs">
     <h1>{{ ourBlogs[0].title }}</h1>
     <span class="headerline"></span>
     <div class="bloggers">
-      <app-blog-cards
+      <!-- <app-blog-cards
         [ourBlogs]="ourBlogs"
         style="display: contents"
-      ></app-blog-cards>
+      ></app-blog-cards> -->
     </div>
-  </div> -->
+  </div>
 
 <!-- ____________________________________________________________________ -->
 

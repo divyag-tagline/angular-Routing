@@ -1,0 +1,50 @@
+.reviewsboxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 317px;
+}
+
+.revbox {
+    box-shadow: 0 3px 8px rgb(0 0 0 / 8%);
+    margin: 12px;
+    max-width: 100%;
+}
+
+.revbox p {
+    font-size: 15px;
+    margin: 6px 12px;
+    line-height: 17px;
+    margin-bottom: 40px;
+}
+
+.revbox small {
+    font-size: 13px;
+    margin: 12px;
+    padding-top: 34px;
+}
+
+.revbox .rating {
+    display: flex;
+}
+
+.revbox .rating h3 {
+    margin: 12px;
+}
+
+.revbox .rating .icon {
+    margin: 12px;
+    color: red;
+}
+
+.revbox .verified {
+    display: flex;
+    color: #585656;
+    font-size: 14px;
+    margin-left: 12px;
+    margin-top: 3px;
+}
+
+.revbox .verified p {
+    margin: 3px;
+}
