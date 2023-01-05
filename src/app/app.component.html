@@ -1,9 +1,11 @@
 <div class="header">
   <nav>
     <ul>
-      <img [src]="logo" />
+      <a routerLink="module/home">
+        <img [src]="logo" />
+      </a>
       <li>
-        <a href="module/home">{{ caseStudy }}</a>
+        <a routerLink="module/home">{{ caseStudy }}</a>
       </li>
       <li *ngFor="let header of headers">
         <a [routerLink]="header.link"

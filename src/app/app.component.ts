@@ -26,7 +26,7 @@ logo: string = "/assets/images/tagline.png"
     },
     {
       name: "Hire Developer",
-      link: "/hiredeveloper"
+      link: "devloper/hiredeveloper"
     },
     {
       name: "Technology",

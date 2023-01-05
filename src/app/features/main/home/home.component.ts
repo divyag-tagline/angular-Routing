@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AwardsRecognitions, ChooseTagline, Empowerbox, Empowerbox1, ExperienceDetailsLeft, ExperienceDetailsRight, FooterDetails, FooterHelp, FooterHrInquiry, FooterLastPortion, FormDetails, GlobalPresence, Headtext, OurBlogs, OurClientele, RatingBox, ServiceCard1, ServiceCard2, ServiceCard3, TechnologyBackEnd } from 'src/app/common';
+import { DetailsDataService } from '../../details-data.service';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,10 @@ import { AwardsRecognitions, ChooseTagline, Empowerbox, Empowerbox1, ExperienceD
 })
 export class HomeComponent implements OnInit {
   title = 'angularRouting';
-
+  ourTechnologies : string = "";
+  technologySidebar : string[] = [];
+  technologyBackEndIcon: TechnologyBackEnd[] = [];
+  technologyFrontEndIcon: TechnologyBackEnd[] = [];
   headtext: Headtext = {
     headText: 'Software Development Company',
     headText1: 'IT Consultancy',
@@ -22,7 +26,7 @@ export class HomeComponent implements OnInit {
 
   }
   // headers: string[] = ["About Us", "Hire Developer", "Technology", "Industry",]
-  ourTechnologies: string = 'Our Technologies';
+ 
   service: string = "Our Services";
   serviceCard1: ServiceCard1 = {
     text1: 'Find the',
@@ -95,51 +99,8 @@ export class HomeComponent implements OnInit {
     heading: '5+',
     heading1: 'Years of experience'
   }];
-  technologySidebar: string[] =
-    ['Web', 'Mobile', 'Desktop', 'Plateform', 'Database / Data Storage', 'Big Data', 'Machine Learning', 'DevOps', 'Clouds']
-  technologyBackEndIcon: TechnologyBackEnd[] = [{
-    backEnd: 'Back End',
-    img: "../assets/images/ror.png",
-    language: "Ruby on Rails"
-  }, {
-    img: "../assets/images/python.png",
-    language: "Python"
-  }, {
-    img: "../assets/images/node_js.svg",
-    language: "Node Js"
-  }, {
-    img: "../assets/images/php.png",
-    language: "PHP"
-  }, {
-    img: "../assets/images/android-java.png",
-    language: "Java"
-  }, {
-    img: "../assets/images/go.png",
-    language: "Go Language"
-  }]
-  technologyFrontEndIcon: TechnologyBackEnd[] = [{
-    backEnd: 'Front End',
-    img: "../assets/images/react-js.png",
-    language: "React Js"
-  }, {
-    img: "../assets/images/angular-icon.png",
-    language: "Angular"
-  }, {
-    img: "../assets/images/typescript-icon.png",
-    language: "Typescript"
-  }, {
-    img: "../assets/images/vue-js.png",
-    language: "Vue Js"
-  }, {
-    img: "../assets/images/meter-js.png",
-    language: "Mateor Js"
-  }, {
-    img: "../assets/images/javascript-icon.png",
-    language: "Java Script"
-  }, {
-    img: "../assets/images/html5.png",
-    language: "HTML 5"
-  }];
+ 
+
   chooseTagline: ChooseTagline = {
     title: "Why Choose Tagline Infotech ?",
     details: 'We have a team of developers who use their expertise to provide complete web\
@@ -356,9 +317,13 @@ export class HomeComponent implements OnInit {
     portion3: 'All rights reserved by',
     portion4: 'Tagline Infotech LLP',
   }
-  constructor() { }
+  constructor(private detailsDataService:DetailsDataService) { }
 
   ngOnInit(): void {
+    this.ourTechnologies = this.detailsDataService.ourTechnologies;
+    this.technologySidebar = this.detailsDataService.technologySidebar;
+    this.technologyBackEndIcon = this.detailsDataService.technologyBackEndIcon;
+    this.technologyFrontEndIcon = this.detailsDataService.technologyFrontEndIcon;
   }
 
 }

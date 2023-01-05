@@ -1,0 +1,36 @@
+<h1 style="text-align: center; margin: 40px; font-size: 2rem; margin-bottom: 0">
+    {{ ourTechnologies }}
+  </h1>
+  <span class="headerline"></span>
+  <div class="row">
+    <div class="menu">
+      <ng-container *ngFor="let tSidebar of technologySidebar">
+        <app-technology-sidebar
+          [technologySidebar]="tSidebar"
+        ></app-technology-sidebar>
+      </ng-container>
+    </div>
+    <div class="language">
+      <div class="web">
+        <h1>{{ technologySidebar[0] }}</h1>
+        <h2 style="margin-top: 20px; font-weight: 400">
+          {{ technologyBackEndIcon[0].backEnd }}
+        </h2>
+        <div class="backend">
+          <ng-container *ngFor="let backend of technologyBackEndIcon">
+            <app-technology-back-end
+              [technologyBackEndIcon]="backend"
+            ></app-technology-back-end>
+          </ng-container>
+        </div>
+        <h2>{{ technologyFrontEndIcon[0].backEnd }}</h2>
+        <div class="frontend">
+          <ng-container *ngFor="let frontEnd of technologyFrontEndIcon">
+            <app-technology-front-end
+              [technologyFrontEndIcon]="frontEnd"
+            ></app-technology-front-end>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>

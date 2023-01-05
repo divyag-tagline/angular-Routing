@@ -10,6 +10,14 @@ const routes: Routes = [
   {
     path: 'module',
     loadChildren: () => import('./features/main/main.module').then(main=>main.MainModule)
+  },
+  {
+    path:'devloper',
+    loadChildren: () => import('./features/hire-deloper/hire-deloper.module').then(dev=>dev.HireDeloperModule)
+  },
+  {
+    path: '**',
+    redirectTo:'module/home'
   }
 ];
 
