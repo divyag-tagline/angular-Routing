@@ -11,6 +11,10 @@ import { RatingStarsComponent } from './rating-stars/rating-stars.component';
 import { AwardIconComponent } from './award-icon/award-icon.component';
 import { BlogCardsComponent } from './blog-cards/blog-cards.component';
 import { GlobalAddressComponent } from './global-address/global-address.component';
+import { FooterInquerySectionComponent } from './footer-inquery-section/footer-inquery-section.component';
+import { FooterHelpSectionComponent } from './footer-help-section/footer-help-section.component';
+import { FooterServiceSectionComponent } from './footer-service-section/footer-service-section.component';
+import { FooterHireDevloperSectionComponent } from './footer-hire-devloper-section/footer-hire-devloper-section.component';
 
 
 @NgModule({
@@ -24,7 +28,11 @@ import { GlobalAddressComponent } from './global-address/global-address.componen
     RatingStarsComponent,
     AwardIconComponent,
     BlogCardsComponent,
-    GlobalAddressComponent
+    GlobalAddressComponent,
+    FooterInquerySectionComponent,
+    FooterHelpSectionComponent,
+    FooterServiceSectionComponent,
+    FooterHireDevloperSectionComponent
   ],
   imports: [
     CommonModule,
@@ -39,7 +47,11 @@ import { GlobalAddressComponent } from './global-address/global-address.componen
     RatingStarsComponent,
     AwardIconComponent,
     BlogCardsComponent,
-    GlobalAddressComponent
+    GlobalAddressComponent,
+    FooterInquerySectionComponent,
+    FooterHelpSectionComponent,
+    FooterServiceSectionComponent,
+    FooterHireDevloperSectionComponent
   ]
 
 })

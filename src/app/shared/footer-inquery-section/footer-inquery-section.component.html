@@ -1,0 +1,18 @@
+<div class="hr">
+  <h3>{{ footerHrInquiry.title }}</h3>
+  <ul>
+    <li *ngIf="!footerHrInquiry.companyName">
+      <a href=""
+        ><i class="bi bi-telephone-fill"></i>&nbsp; {{ footerHrInquiry.mobileNo }}</a
+      >
+    </li>
+    <li *ngIf="footerHrInquiry.companyName">
+      <a href="">{{ footerHrInquiry.companyName }} </a>
+    </li>
+    <li>
+      <a href=""
+        ><i class="bi bi-envelope-fill"></i>&nbsp; {{ footerHrInquiry.gmail }}</a
+      >
+    </li>
+  </ul>
+</div>
