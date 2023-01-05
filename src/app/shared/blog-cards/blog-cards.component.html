@@ -1,1 +1,12 @@
-<p>blog-cards works!</p>
+<div class="blog">
+  <img [src]="ourBlogs.img" />
+  <div style="display: flex; justify-content: space-between">
+    <button>{{ ourBlogs.blogButton }}</button>
+    <p>{{ ourBlogs.blogDate }}</p>
+  </div>
+  <h3>{{ ourBlogs.heading }}</h3>
+  <p>
+    {{ ourBlogs.heading1 }}
+  </p>
+  <a href="#">{{ ourBlogs.readMore }}</a>
+</div>

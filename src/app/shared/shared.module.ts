@@ -10,6 +10,7 @@ import { BoxCardsChooseTaglineComponent } from './box-cards-choose-tagline/box-c
 import { RatingStarsComponent } from './rating-stars/rating-stars.component';
 import { AwardIconComponent } from './award-icon/award-icon.component';
 import { BlogCardsComponent } from './blog-cards/blog-cards.component';
+import { GlobalAddressComponent } from './global-address/global-address.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { BlogCardsComponent } from './blog-cards/blog-cards.component';
     BoxCardsChooseTaglineComponent,
     RatingStarsComponent,
     AwardIconComponent,
-    BlogCardsComponent
+    BlogCardsComponent,
+    GlobalAddressComponent
   ],
   imports: [
     CommonModule,
@@ -36,7 +38,8 @@ import { BlogCardsComponent } from './blog-cards/blog-cards.component';
     BoxCardsChooseTaglineComponent,
     RatingStarsComponent,
     AwardIconComponent,
-    BlogCardsComponent
+    BlogCardsComponent,
+    GlobalAddressComponent
   ]
 
 })

@@ -201,60 +201,62 @@
       {{ awardsRecognitions.heading2 }}
     </h1>
   </div>
-  <div class="awardimage" >
-  <ng-container *ngFor="let image of awardsRecognitionsImg">
-    <app-award-icon
-      [awardsRecognitionsImg]="image"
-      style="display: flex"
-    ></app-award-icon>
-  </ng-container>
-</div>
+  <div class="awardimage">
+    <ng-container *ngFor="let image of awardsRecognitionsImg">
+      <app-award-icon
+        [awardsRecognitionsImg]="image"
+        style="display: flex"
+      ></app-award-icon>
+    </ng-container>
+  </div>
 </div>
 
 <!-- ____________________________________________________________________ -->
 
 <div class="blogs">
-    <h1>{{ ourBlogs[0].title }}</h1>
-    <span class="headerline"></span>
-    <div class="bloggers">
-      <!-- <app-blog-cards
-        [ourBlogs]="ourBlogs"
+  <h1>{{ ourBlogs[0].title }}</h1>
+  <span class="headerline"></span>
+  <div class="bloggers">
+    <ng-container *ngFor="let blog of ourBlogs">
+      <app-blog-cards
+        [ourBlogs]="blog"
         style="display: contents"
-      ></app-blog-cards> -->
-    </div>
+      ></app-blog-cards>
+    </ng-container>
   </div>
+</div>
 
 <!-- ____________________________________________________________________ -->
 
-<!-- <div class="contactus">
-    <div class="formdetail">
-      <div class="address">
-        <h4>{{ globalPresence[0].title }}</h4>
-  
+<div class="contactus">
+  <div class="formdetail">
+    <div class="address">
+      <h4>{{ globalPresence[0].title }}</h4>
+      <ng-container *ngFor="let global of globalPresence">
         <app-global-address
-          [globalPresence]="globalPresence"
+          [globalPresence]="global"
         ></app-global-address>
-  
-        <div class="place">
-          <a href="mailto:solutions@taglineinfotech.com" class="mail"
-            ><i class="bi bi-envelope-fill"></i>{{ globalPresence[2].gmail }}</a
-          >
-        </div>
+      </ng-container>
+      <div class="place">
+        <a href="mailto:solutions@taglineinfotech.com" class="mail"
+          ><i class="bi bi-envelope-fill"></i>{{ globalPresence[2].gmail }}</a
+        >
       </div>
     </div>
-    <div class="forms">
-      <h1>{{ formDetails.title }}</h1>
-      <input type="text" placeholder="Full Name" /><br />
-      <input type="text" placeholder="Phone" /><br />
-      <input type="email" placeholder="Email" /><br />
-      <textarea placeholder="Message" rows="3"></textarea><br />
-      <button>{{ formDetails.formButton }}</button>
-    </div>
-  </div> -->
+  </div>
+  <div class="forms">
+    <h1>{{ formDetails.title }}</h1>
+    <input type="text" placeholder="Full Name" /><br />
+    <input type="text" placeholder="Phone" /><br />
+    <input type="email" placeholder="Email" /><br />
+    <textarea placeholder="Message" rows="3"></textarea><br />
+    <button>{{ formDetails.formButton }}</button>
+  </div>
+</div>
 
 <!-- ____________________________________________________________________ -->
 
-<!-- <div class="footer">
+<div class="footer">
     <div class="firstfooter">
       <div class="cont1">
         <h3>{{ footerDetails.title }}</h3>
@@ -274,27 +276,27 @@
     </div>
     <div class="division">
       <ng-container>
-        <app-footer-inquery-section
+        <!-- <app-footer-inquery-section
           [footerHrInquiry]="footerHrInquiry"
-        ></app-footer-inquery-section>
+        ></app-footer-inquery-section> -->
       </ng-container>
       <div class="help">
         <h3>{{ footerHelp[0].heading }}</h3>
-        <app-footer-help-section
+        <!-- <app-footer-help-section
           [footerHelp]="footerHelp"
-        ></app-footer-help-section>
+        ></app-footer-help-section> -->
       </div>
       <div class="service">
         <h3>Services</h3>
-        <app-footer-services-section
+        <!-- <app-footer-services-section
           [footerServices]="footerServices"
-        ></app-footer-services-section>
+        ></app-footer-services-section> -->
       </div>
       <div class="hire">
         <h3>Hire Developers</h3>
-        <app-footer-hire-devloper-section
+        <!-- <app-footer-hire-devloper-section
           [footerHireDevlopers]="footerHireDevlopers"
-        ></app-footer-hire-devloper-section>
+        ></app-footer-hire-devloper-section> -->
       </div>
     </div>
   
@@ -317,4 +319,4 @@
         }}</a>
       </p>
     </div>
-  </div>  -->
+  </div> 
