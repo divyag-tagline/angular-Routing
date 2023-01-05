@@ -25,6 +25,7 @@ export interface Empowerbox {
 }
 
 export interface RatingBox {
+  id:number,
   heading: number,
   detail1: string,
   detail2: string,

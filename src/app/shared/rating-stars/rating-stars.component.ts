@@ -7,12 +7,7 @@ import { RatingBox } from 'src/app/common';
   styleUrls: ['./rating-stars.component.scss']
 })
 export class RatingStarsComponent implements OnInit {
-  @Input() ratingStars: RatingBox = {
-    heading: 0,
-    detail1: '',
-    detail2: '',
-    review: ''
-  }
+  @Input() ratingStars!: RatingBox;
   constructor() { }
 
   ngOnInit(): void {

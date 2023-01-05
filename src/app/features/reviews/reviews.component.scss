@@ -1,0 +1,84 @@
+.reviews {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    height: 188px;
+}
+
+.reviews .reviewword {
+    max-width: 25%;
+    margin-left: 140px;
+
+}
+
+.reviews .reviewword h1 {
+    font-weight: 600;
+    font-size: 31px;
+    color: #242424;
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+
+.reviews .reviewword p {
+    padding-top: 20px;
+    font-size: 19px;
+    color: #404040;
+    line-height: 30px;
+}
+
+.reviews .reviewsboxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* max-width: 63%; */
+}
+
+.reviews .reviewsboxes .revbox {
+    box-shadow: 0 3px 8px rgb(0 0 0 / 8%);
+    margin: 12px;
+    max-width: 25%;
+}
+
+.reviews .reviewsboxes .revbox p {
+    font-size: 15px;
+    margin: 6px 12px;
+    line-height: 17px;
+    margin-bottom: 40px;
+}
+
+.reviews .reviewsboxes .revbox small {
+    font-size: 13px;
+    margin: 12px;
+    padding-top: 34px;
+}
+
+.reviews .reviewsboxes .revbox .rating {
+    display: flex;
+}
+
+.reviews .reviewsboxes .revbox .rating h3 {
+    margin: 12px;
+}
+
+.reviews .reviewsboxes .revbox .rating .icon {
+    margin: 12px;
+    color: red;
+}
+
+.reviews .reviewsboxes .revbox .verified {
+    display: flex;
+    color: #585656;
+    font-size: 14px;
+    margin-left: 12px;
+    margin-top: 3px;
+}
+
+.reviews .reviewsboxes .revbox .verified p {
+    margin: 3px;
+}
+
+.ratingStar {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}

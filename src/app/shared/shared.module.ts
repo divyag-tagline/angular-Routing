@@ -15,6 +15,7 @@ import { FooterInquerySectionComponent } from './footer-inquery-section/footer-i
 import { FooterHelpSectionComponent } from './footer-help-section/footer-help-section.component';
 import { FooterServiceSectionComponent } from './footer-service-section/footer-service-section.component';
 import { FooterHireDevloperSectionComponent } from './footer-hire-devloper-section/footer-hire-devloper-section.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { FooterHireDevloperSectionComponent } from './footer-hire-devloper-secti
   ],
   imports: [
     CommonModule,
+    RouterModule
   ],
   exports: [
     ServiceCardComponent,

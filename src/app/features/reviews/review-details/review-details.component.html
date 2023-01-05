@@ -1,0 +1,29 @@
+<div class="row justify-content-center">
+  <div class="card w-25" *ngIf="reviewDetails">
+    <div class="card-header mt-2">
+      <div class="row d-flex">
+        <div class="col mx-auto d-flex text-center">
+          <h3 class="me-3 heading text-center">{{ reviewDetails.heading }}</h3>
+          <div class="icon text-center">
+            <i
+              class="bi bi-star-fill ml-3 text-danger  "
+              *ngFor="let item of [].constructor(reviewDetails?.heading)"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col">
+          <p>{{ reviewDetails.detail1 }}</p>
+          <small>{{ reviewDetails.detail2 }}</small>
+          <div class="verified">
+            <i class="bi bi-patch-check-fill"></i>&nbsp;
+            <p>{{ reviewDetails.review }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

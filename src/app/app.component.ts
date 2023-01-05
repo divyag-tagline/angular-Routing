@@ -11,7 +11,7 @@ interface Headers {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  caseStudy: string = "Case Study";
+  // caseStudy: string = "Case Study";
 
   buttonText: string = 'GET QUOTE';
   logo: string = "/assets/images/tagline.png"
@@ -22,19 +22,28 @@ export class AppComponent {
     },
     {
       name: "About Us",
-      link: "about"
+      link: "devloper/about"
     },
-    {
-      name: "Hire Developer",
-      link: "devloper/hiredeveloper"
-    },
+    
+    // {
+    //   name: "Hire Developer",
+    //   link: "devloper/hiredeveloper"
+    // },
     {
       name: "Technology",
       link: "devloper"
     },
     {
-      name: "Industry",
-      link: "home"
+      name:"Blog",
+      link:'blog'
+    },
+    // {
+    //   name: "Industry",
+    //   link: "home"
+    // },
+    {
+      name:'Reviews',
+      link: 'review'
     }
   ];
 

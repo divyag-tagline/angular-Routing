@@ -4,14 +4,16 @@
       <a routerLink="/home">
         <img [src]="logo" />
       </a>
-      <li>
-        <a routerLink="/home">{{ caseStudy }}</a>
-      </li>
-      <li *ngFor="let header of headers">
-        <a [routerLink]="header.link"
-          ><label>{{ header.name }}</label></a
-        >
-      </li>
+      <!-- <li>
+        <a routerLink="/home" routerLinkActive="activeLink">{{ caseStudy }}</a>
+      </li> -->
+      <ng-container *ngFor="let header of headers">
+        <li>
+          <a [routerLink]="header.link" routerLinkActive="activeLink"
+            ><label>{{ header.name }}</label></a
+          >
+        </li>
+      </ng-container>
       <div class="btnget">
         <button type="button">
           {{ buttonText }}

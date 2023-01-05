@@ -1,0 +1,73 @@
+.blogs h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+    margin-top: 50px;
+}
+.headerline {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+    height: 2px;
+    background: radial-gradient(50% 151250% at 50% -100%, #d96122 0%, rgba(255, 255, 255, 0) 100%);
+}
+.blogs .bloggers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 90px;
+
+}
+
+.blogs .bloggers .blog {
+    box-shadow: 0 0 75px rgb(0 0 0 / 10%);
+    border-bottom: 5px solid #D96122;
+    max-width: 30%;
+    padding: 15px;
+
+}
+
+.blogs .bloggers .blog img {
+    width: 100%;
+}
+
+.blogs .bloggers .blog div button {
+    background-color: #d85b1a;
+    border: none;
+    padding: 8px;
+    font-size: 15px;
+    color: white;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.blogs .bloggers .blog div p {
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: gray;
+}
+
+.blogs .bloggers .blog h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #242424;
+}
+
+.blogs .bloggers .blog p {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.blogs .bloggers .blog a {
+    color: #d85b1a;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}

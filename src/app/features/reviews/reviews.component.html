@@ -1,0 +1,17 @@
+<div class="reviews">
+  <div class="reviewword">
+    <h1>{{ ourClientele.title }}</h1>
+    <span class="headerline"></span>
+    <p>
+      {{ ourClientele.detail1 }}
+    </p>
+    <p>
+      {{ ourClientele.details2 }}
+    </p>
+  </div>
+  <div class="ratingStar">
+    <ng-container *ngFor="let ratingStar of ratingStars">
+      <app-rating-stars [ratingStars]="ratingStar"></app-rating-stars>
+    </ng-container>
+  </div>
+</div>

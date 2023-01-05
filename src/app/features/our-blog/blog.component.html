@@ -1,0 +1,12 @@
+<div class="blogs">
+  <h1>{{ ourBlogs[0].title }}</h1>
+  <span class="headerline"></span>
+  <div class="bloggers">
+    <ng-container *ngFor="let blog of ourBlogs">
+      <app-blog-cards
+        [ourBlogs]="blog"
+        style="display: contents"
+      ></app-blog-cards>
+    </ng-container>
+  </div>
+</div>
