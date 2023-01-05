@@ -1,11 +1,11 @@
 <div class="header">
   <nav>
     <ul>
-      <a routerLink="module/home">
+      <a routerLink="/home">
         <img [src]="logo" />
       </a>
       <li>
-        <a routerLink="module/home">{{ caseStudy }}</a>
+        <a routerLink="/home">{{ caseStudy }}</a>
       </li>
       <li *ngFor="let header of headers">
         <a [routerLink]="header.link"
@@ -20,5 +20,4 @@
     </ul>
   </nav>
 </div>
-
 <router-outlet></router-outlet>

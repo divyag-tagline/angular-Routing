@@ -14,15 +14,15 @@ export class AppComponent {
   caseStudy: string = "Case Study";
 
   buttonText: string = 'GET QUOTE';
-logo: string = "/assets/images/tagline.png"
+  logo: string = "/assets/images/tagline.png"
   headers: Headers[] = [
     {
       name: "Home",
-      link: "module/home"
+      link: "home"
     },
     {
       name: "About Us",
-      link: "/about"
+      link: "about"
     },
     {
       name: "Hire Developer",
@@ -30,12 +30,12 @@ logo: string = "/assets/images/tagline.png"
     },
     {
       name: "Technology",
-      link: "/technology"
+      link: "devloper"
     },
     {
-      name : "Industry",
-      link : "/industry"
+      name: "Industry",
+      link: "home"
     }
-    ];
-   
+  ];
+
 }

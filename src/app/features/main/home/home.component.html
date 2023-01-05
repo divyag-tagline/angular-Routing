@@ -18,46 +18,6 @@
 </div>
 
 <!-- ___________________________________________________________ -->
-<!-- <div class="topbar">
-    <div class="header">
-      <nav>
-        <ul>
-          <img [src]="logo" />
-          <li>
-            <a href="/home">{{ caseStudy }}</a>
-          </li>
-          <li *ngFor="let header of headers">
-            <a [routerLink]="header.link"
-              ><label>{{ header.name }}</label></a
-            >
-          </li>
-          <div class="btnget">
-            <button type="button">
-              {{ buttonText }}
-            </button>
-          </div>
-        </ul>
-      </nav>
-    </div>
-    <div class="headtext">
-      <h1>
-        {{ headtext.headText }} <br />
-        & {{ headtext.headText1 }}
-      </h1>
-      <h1>
-        {{ headtext.headText3 }} <span>{{ headtext.headText4 }} </span>
-      </h1>
-      <p>
-        {{ headtext.headText5 }}
-        <br />
-        {{ headtext.headText6 }}
-      </p>
-      <button type="button">{{ headtext.headButton }}</button>
-      <img [src]="headtext.img" />
-    </div>
-  </div>
-  <br />
-  <br /> -->
 <div class="services">
   <h1>{{ service }}</h1>
   <span class="headerline"></span>
@@ -152,11 +112,6 @@
 <span class="headerline"></span>
 <p class="taglinewhyp">{{ chooseTagline.details }}</p>
 <div class="empowers">
-  <!-- <app-box-cards-choose-tagline
-      [boxCards]="boxCards"
-      style="display: contents"
-    ></app-box-cards-choose-tagline> -->
-
   <ng-container *ngFor="let boxCard of boxCards">
     <app-box-cards-choose-tagline
       style="display: contents"

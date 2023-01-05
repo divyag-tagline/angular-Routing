@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
+import { BoxCardsChooseTaglineComponent } from './shared/box-cards-choose-tagline/box-cards-choose-tagline.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,7 @@ import { AboutComponent } from './about/about.component';
     AppRoutingModule, 
     BrowserModule, 
     FormsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
