@@ -5,12 +5,12 @@ import { ReviewsComponent } from './reviews.component';
 
 const routes: Routes = [
   {
-    path:'',
-    component:ReviewsComponent
+    path: '',
+    component: ReviewsComponent
   },
   {
-    path:':reviewId',
-    component:ReviewDetailsComponent
+    path: ':reviewId',
+    component: ReviewDetailsComponent
   }
 ];
 

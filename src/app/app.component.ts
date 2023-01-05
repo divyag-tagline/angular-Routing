@@ -20,11 +20,6 @@ export class AppComponent {
       name: "Home",
       link: "home"
     },
-    {
-      name: "About Us",
-      link: "devloper/about"
-    },
-    
     // {
     //   name: "Hire Developer",
     //   link: "devloper/hiredeveloper"
@@ -37,13 +32,13 @@ export class AppComponent {
       name:"Blog",
       link:'blog'
     },
-    // {
-    //   name: "Industry",
-    //   link: "home"
-    // },
     {
       name:'Reviews',
       link: 'review'
+    },
+    {
+      name: "About Us",
+      link: "devloper/about"
     }
   ];
 

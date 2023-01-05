@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Empowerbox } from '../../../common';
-import { DetailsDataService } from '../../details-data.service';
+import { Empowerbox } from '../common';
+import { DetailsDataService } from '../features/details-data.service';
 interface ChooseTagline {
   title: string,
   details: string

@@ -29,8 +29,13 @@ ul {
 
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header nav img {
-    margin: 5px 335px 0px  8%;
+    margin: 5px 335px 0px 8%;
 }
 
 nav ul li {
@@ -45,21 +50,21 @@ nav ul li a {
     color: black;
 }
 
-nav ul li select {
+nav ul li {
     border: none;
     font-size: 18px;
     font-family: sans-serif;
 
 }
 
-ul .btnget {
+.btnget {
     display: flex;
     justify-content: center;
     text-align: center;
     width: 38%;
 }
 
-nav ul button {
+button {
     margin-top: 20px;
     height: 45px;
     // padding: 17px 28px;
@@ -73,19 +78,22 @@ nav ul button {
     cursor: pointer;
 }
 
-nav ul button:hover {
+button:hover {
     border-radius: 5px;
     background-color: white;
     transition: all .5s ease-in;
     border: 1px solid #D96122;
 }
-label{
+
+label {
     cursor: pointer;
     width: max-content;
 }
-a img {
-    margin-right: 10px;
-}
-label:hover  {
+
+// a img {
+//     margin-right: 10px;
+// }
+
+label:hover {
     color: #da6427;
 }
