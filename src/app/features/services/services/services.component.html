@@ -1,0 +1,29 @@
+<div class="services">
+    <h1>{{ service }}</h1>
+    <span class="headerline"></span>
+    <div class="boxes">
+      <div class="divcontent divcontent1" style="border: none">
+        <h1 style="text-align: left; line-height: 70px; font-weight: 700">
+          {{ serviceCard1.text1 }} <br />
+          <span style="font-weight: bolder; font-size: 60px">{{
+            serviceCard1.text2
+          }}</span>
+          <br />
+          {{ serviceCard1.text3 }}
+        </h1>
+      </div>
+      <ng-container *ngFor="let data of serviceCard2">
+        <app-service-card
+          [services]="data"
+          style="display: contents"
+        ></app-service-card>
+      </ng-container>
+      <div class="divcontent divcontent7">
+        <h2>
+          {{ serviceCard6.heading }}
+          <span style="font-weight: bold">{{ serviceCard6.span }}</span>
+        </h2>
+        <button>{{ serviceCard6.buttonText }}</button>
+      </div>
+    </div>
+  </div>

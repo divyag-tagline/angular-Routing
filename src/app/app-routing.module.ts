@@ -1,27 +1,27 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
+import { ServicesModule } from './features/services/services.module';
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./features/main/main.module').then(main=>main.MainModule)
+    loadChildren: () => import('./features/main/main.module').then(main => main.MainModule)
   },
   {
-    path:'devloper',
-    loadChildren: () => import('./features/hire-devloper/hire-devloper.module').then(dev=>dev.HireDeloperModule)
+    path: 'services',
+    loadChildren: () => import('./features/services/services.module').then(service => service.ServicesModule)
   },
   {
-    path:'review',
-    loadChildren: ()=> import('./features/reviews/reviews.module').then(review=>review.ReviewsModule)
+    path: 'review',
+    loadChildren: () => import('./features/reviews/reviews.module').then(review => review.ReviewsModule)
   },
   {
-    path:'blog',
-    loadChildren: ()=> import('./features/our-blog/our-blog.module').then(blog=>blog.OurBlogModule)
+    path: 'blog',
+    loadChildren: () => import('./features/our-blog/our-blog.module').then(blog => blog.OurBlogModule)
   },
   {
     path: '**',
-    redirectTo:''
+    redirectTo: ''
   }
 ];
 
@@ -29,4 +29,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
