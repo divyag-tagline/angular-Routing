@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute} from '@angular/router';
 import { RatingBox } from 'src/app/common';
 import { DetailsDataService } from '../../details-data.service';
 
@@ -10,9 +10,8 @@ import { DetailsDataService } from '../../details-data.service';
 })
 export class ReviewDetailsComponent implements OnInit {
   public reviewId!: number;
-  reviewDetails!: RatingBox | undefined;
+  reviewDetails!: RatingBox| undefined;
   constructor(
-    private router: Router,
     private route: ActivatedRoute,
     private detailsDataService: DetailsDataService
   ) {

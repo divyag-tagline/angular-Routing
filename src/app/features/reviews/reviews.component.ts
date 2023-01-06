@@ -8,11 +8,7 @@ import { DetailsDataService } from '../details-data.service';
   styleUrls: ['./reviews.component.scss']
 })
 export class ReviewsComponent implements OnInit {
-  ourClientele: OurClientele = {
-    title: '',
-    detail1: '',
-    details2: ''
-  }
+  ourClientele !: OurClientele
   ratingStars: RatingBox[] = [];
   constructor(private detailsDataService: DetailsDataService) { }
 

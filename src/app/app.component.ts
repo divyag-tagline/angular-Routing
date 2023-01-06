@@ -26,7 +26,7 @@ export class AppComponent {
     },
     {
       name: "Technology",
-      link: "services/technology"
+      link: "technology"
     },
     {
       name:"Blog",
@@ -38,7 +38,7 @@ export class AppComponent {
     },
     {
       name: "About Us",
-      link: "services/about"
+      link: "about"
     }
   ];
 

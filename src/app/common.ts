@@ -1,4 +1,5 @@
 export interface ServiceCard2 {
+  id:number,
   img: string,
   heading: string,
   description: string,
@@ -18,6 +19,7 @@ export interface TechnologyBackEnd {
 }
 
 export interface Empowerbox {
+  id:number,
   img: string,
   heading: string,
   heading1: string,

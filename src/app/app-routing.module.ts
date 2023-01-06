@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ServicesModule } from './features/services/services.module';
 
 const routes: Routes = [
   {
@@ -9,15 +8,23 @@ const routes: Routes = [
   },
   {
     path: 'services',
-    loadChildren: () => import('./features/services/services.module').then(service => service.ServicesModule)
+    loadChildren: () => import('./features/service/services.module').then(service => service.ServicesModule)
+  },
+  {
+    path: 'technology',
+    loadChildren: () => import('./features/technology-details/technology-details.module').then(technology => technology.TechnologyDetailsModule)
+  },
+  {
+    path: 'blog',
+    loadChildren: () => import('./features/our-blog/our-blog.module').then(blog => blog.OurBlogModule)
   },
   {
     path: 'review',
     loadChildren: () => import('./features/reviews/reviews.module').then(review => review.ReviewsModule)
   },
   {
-    path: 'blog',
-    loadChildren: () => import('./features/our-blog/our-blog.module').then(blog => blog.OurBlogModule)
+    path: 'about',
+    loadChildren: () => import('./features/aboutDetails/about-details.module').then(about => about.AboutDetailsModule)
   },
   {
     path: '**',

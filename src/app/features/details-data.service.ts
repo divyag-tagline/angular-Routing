@@ -101,8 +101,9 @@ export class DetailsDataService {
     text2: 'right offers',
     text3: ' for you.',
   };
-  serviceCard2: ServiceCard2[] = [
+  serviceCardDetails: ServiceCard2[] = [
     {
+      id: 1,
       img: '../assets/images/mobile.png',
       heading: 'Application Management and Modernisation',
       description: `Here at Tagline, we provide the service of Application management and 
@@ -112,6 +113,7 @@ export class DetailsDataService {
       learMore: 'Learn More ->',
     },
     {
+      id: 2,
       img: '../assets/images/web-design-icon.webp',
       heading: 'Software Product Engineering',
       description:
@@ -122,6 +124,7 @@ export class DetailsDataService {
       learMore: 'Learn More ->',
     },
     {
+      id: 3,
       img: '../assets/images/testing-icon.webp',
       heading: 'Agile QA, Automation, and DevOps',
       description:
@@ -132,6 +135,7 @@ export class DetailsDataService {
       learMore: 'Learn More ->',
     },
     {
+      id: 4,
       img: '../assets/images/uiux-design-icon.webp',
       heading: 'Digital Strategy & Design',
       description:
@@ -161,6 +165,7 @@ export class DetailsDataService {
   };
   boxCards: Empowerbox[] = [
     {
+      id: 1,
       img: '../assets/images/choose-roadmap.png',
       heading: '01',
       heading1: 'Progressive Roadmap',
@@ -170,6 +175,7 @@ export class DetailsDataService {
     have a team of developers that uses progressive',
     },
     {
+      id: 2,
       img: '../assets/images/choose-project.png',
       heading: '02',
       heading1: 'Efficient Project Management',
@@ -179,6 +185,7 @@ export class DetailsDataService {
   project management tools efficiently',
     },
     {
+      id: 3,
       img: '../assets/images/choose-flexible.svg',
       heading: '03',
       heading1: 'Flexible Engagement Model',
@@ -188,6 +195,7 @@ export class DetailsDataService {
   satisfied with any model you can switch to another.',
     },
     {
+      id: 4,
       img: '../assets/images/choose-cost.png',
       heading: '04',
       heading1: 'Cost-Effective',
@@ -197,6 +205,7 @@ export class DetailsDataService {
   at cost-effective prices and that’s why we provide different hiring',
     },
     {
+      id: 5,
       img: '../assets/images/choose-delivery.png',
       heading: '05',
       heading1: 'Consistent Delivery',
@@ -438,7 +447,13 @@ export class DetailsDataService {
   };
   constructor() { }
   getReviewId(id: number) {
-    console.log("id",this.ratingStars.find(data => data.id === id  ));
+    // console.log("id", this.ratingStars.find(data => data.id === id));
     return this.ratingStars.find((data) => data.id === id);
+  }
+  getServicesId(id: number) {
+    return this.serviceCardDetails.find((data) => data.id === id);
+  }
+  getAboutId(id: number) {
+    return this.boxCards.find((data) => data.id === id)
   }
 }

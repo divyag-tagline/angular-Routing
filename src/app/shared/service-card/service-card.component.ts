@@ -7,17 +7,12 @@ import { ServiceCard2 } from 'src/app/common';
   styleUrls: ['./service-card.component.scss']
 })
 export class ServiceCardComponent implements OnInit {
-  @Input() services:ServiceCard2 = {
-    img: '',
-    heading: '',
-    description: '',
-    learMore: ''
-  };
+  @Input() services !: ServiceCard2
   constructor() { }
 
   ngOnInit(): void {
-    console.log("services",this.services);
-    
+    console.log("services", this.services);
+
   }
 
 }

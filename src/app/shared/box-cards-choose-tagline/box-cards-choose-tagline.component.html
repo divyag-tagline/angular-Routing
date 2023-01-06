@@ -1,4 +1,6 @@
-<div class="empowerbox" >
+<div class="empowerbox"
+[routerLink]="['/about/' + boxCards.id ] "  
+>
   <div class="imgnumflex">
     <img [src]="boxCards.img" />
     <h1>{{ boxCards.heading }}</h1>
@@ -6,3 +8,8 @@
   <h5>{{ boxCards.heading1 }}</h5>
   <p>{{ boxCards.detail }}</p>
 </div>
+<!-- 
+
+(click)="getAboutId('/about',boxCards.id,boxCards)" 
+(click)="getAboutId()" -->
+<!-- [routerLink]="['/about',boxCards.id,boxCards]" -->

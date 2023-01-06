@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Empowerbox } from '../../../common';
+import { Empowerbox } from 'src/app/common';
 import { DetailsDataService } from '../../details-data.service';
 interface ChooseTagline {
   title: string,
@@ -23,13 +23,7 @@ export class AboutComponent implements OnInit {
     details: ''
   }
   boxCards: Empowerbox[] = [];
-  empowerboxLast: Empowerbox1 = {
-    empower: '',
-    your: '',
-    business: '',
-    heading: '',
-    boxButton: ''
-  }
+  empowerboxLast !: Empowerbox1 
   constructor(private detailsDataService: DetailsDataService) { }
 
   ngOnInit(): void {
@@ -37,5 +31,8 @@ export class AboutComponent implements OnInit {
     this.boxCards = this.detailsDataService.boxCards;
     this.empowerboxLast = this.detailsDataService.empowerboxLast;
   }
-
+  getAboutId(id:number){
+      console.log("aboutid"),id;
+      
+  }
 }

@@ -1,0 +1,18 @@
+<div class="row justify-content-center">
+  <div class="card w-25" *ngIf="boxCard">
+    <div class="card-header">
+      <div class="col d-flex">
+        <img [src]="boxCard.img" />
+        <h3>{{ boxCard.heading1 }}</h3>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="col d-flex justify-content-center" >
+        <p>{{ boxCard.detail }}</p>
+      </div>
+      <!-- <div class="col d-flex justify-content-center">
+        <button class="btn btn-outline-danger" routerLink='/services'>{{boxCard.}}</button>
+      </div> -->
+    </div>
+  </div>
+</div>

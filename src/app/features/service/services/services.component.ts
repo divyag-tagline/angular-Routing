@@ -10,14 +10,14 @@ import { DetailsDataService } from '../../details-data.service';
 export class ServicesComponent implements OnInit {
   service: string = "";
   serviceCard1 !: ServiceCard1;
-  serviceCard2 !: ServiceCard2[];
+  serviceCardDetails !: ServiceCard2[];
   serviceCard6 !: ServiceCard3
   constructor(private detailsDataService: DetailsDataService) { }
 
   ngOnInit(): void {
     this.service = this.detailsDataService.service;
     this.serviceCard1 = this.detailsDataService.serviceCard1;
-    this.serviceCard2 = this.detailsDataService.serviceCard2;
+    this.serviceCardDetails = this.detailsDataService.serviceCardDetails;
     this.serviceCard6 = this.detailsDataService.serviceCard6;
   }
 
