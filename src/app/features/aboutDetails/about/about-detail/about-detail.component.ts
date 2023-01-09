@@ -21,12 +21,16 @@ export class AboutDetailComponent implements OnInit {
   constructor(private detailsDataService: DetailsDataService, private route: ActivatedRoute) {
     this.route.params.subscribe((data) => {
       console.log(data);
-        this.aboutId = data['aboutId']
     })
   }
-
+  
   ngOnInit(): void {
-        this.boxCard = this.detailsDataService.getAboutId(+ this.aboutId)
+    this.route.params.subscribe((data)=>{
+      console.log(data);
+      this.aboutId = data['aboutId']
+      this.boxCard = this.detailsDataService.getAboutId(+ this.aboutId)
+        
+      })
   }
 
 }

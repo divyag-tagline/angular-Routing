@@ -49,6 +49,7 @@
 
 .empowers .empowerbox img {
     margin: 10px;
+    text-decoration: none;
 }
 
 .empowers .empowerbox h5 {
@@ -117,4 +118,10 @@
     margin: auto;
     margin-top: 30px;
     box-shadow: 0 5px 35px rgb(0 0 0 / 20%);
+}
+.nav a{
+    text-decoration: none;
+}
+.empowers a{
+    text-decoration: none;
 }

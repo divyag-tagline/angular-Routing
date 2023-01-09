@@ -48,9 +48,10 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: black;
+    display: flex;
 }
 
-nav ul li {
+nav ul li select{
     border: none;
     font-size: 18px;
     font-family: sans-serif;

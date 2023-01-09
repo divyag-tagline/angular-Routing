@@ -5,13 +5,16 @@ import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {
-    path:'',
-    component:AboutComponent
+    path: '',
+    component: AboutComponent,
+    children: [
+      {
+        path: ':aboutId',
+        component: AboutDetailComponent
+      }
+    ]
   },
-  {
-    path:':aboutId',
-    component:AboutDetailComponent
-  }
+
 ];
 
 @NgModule({

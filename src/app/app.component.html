@@ -5,11 +5,30 @@
     </a>
     <ul>
       <ng-container *ngFor="let header of headers">
-        <li>
-          <a [routerLink]="header.link" routerLinkActive="activeLink"
-            ><label>{{ header.name }}</label></a
-          >
-        </li>
+        <ng-container
+          *ngIf="header.name === 'About Us'; then isAbout; else isNotAbout"
+        ></ng-container>
+        <ng-template #isAbout >
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" [routerLink]="header.link"  id="about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {{header.name}}
+            </a>
+            <!-- <ul class="dropdown-menu" aria-labelledby="about">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+            </ul> -->
+          </li>
+        </ng-template>
+        <ng-template #isNotAbout>
+          <li>
+            <a [routerLink]="header.link" routerLinkActive="activeLink"
+              ><label>{{ header.name }}</label>
+              <!-- <select class="form-select" >
+                <option><label>{{ header.name }}</label></option>
+                <option>Consistent Delivery</option>
+              </select> -->
+            </a>
+          </li>
+        </ng-template>
       </ng-container>
     </ul>
     <div class="btnget">

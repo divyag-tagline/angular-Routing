@@ -12,7 +12,8 @@ interface Headers {
 })
 export class AppComponent {
   // caseStudy: string = "Case Study";
-
+  isAbout: boolean = false;
+  isNotAbout: boolean = false;
   buttonText: string = 'GET QUOTE';
   logo: string = "/assets/images/tagline.png"
   headers: Headers[] = [
@@ -29,16 +30,17 @@ export class AppComponent {
       link: "technology"
     },
     {
-      name:"Blog",
-      link:'blog'
+      name: "Blog",
+      link: 'blog'
     },
     {
-      name:'Reviews',
+      name: 'Reviews',
       link: 'review'
     },
     {
       name: "About Us",
       link: "about"
+
     }
   ];
 
