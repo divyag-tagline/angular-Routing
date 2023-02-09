@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoginService } from './features/auth/services/login.service';
 
 interface Headers {
   name: string;
@@ -43,11 +44,14 @@ export class AppComponent {
       link: 'about',
     },
   ];
+  isLoggedIn: any;
 
-  constructor(private router: Router){}
+  constructor(private loginService: LoginService, private router: Router) {
+    this.isLoggedIn = this.loginService.isLoggedin();
+  }
 
   logOut() {
-    localStorage.removeItem('email');
+    localStorage.clear();
     this.router.navigateByUrl('/login');
-  };
+  }
 }

@@ -3,16 +3,16 @@
 <p class="taglinewhyp">{{ chooseTagline.details }}</p>
 <div class="empowers">
   <ng-container *ngFor="let boxCard of boxCards">
-      <!-- <a [routerLink]="['/about/' + boxCard.id]" >
-        <app-box-cards-choose-tagline
-          style="display: contents"
-          [boxCards]="boxCard"
-        ></app-box-cards-choose-tagline>
-      </a> -->
+    <a [routerLink]="['/about/' + boxCard.id]">
       <app-box-cards-choose-tagline
+        style="display: contents"
+        [boxCards]="boxCard"
+      ></app-box-cards-choose-tagline>
+    </a>
+    <!-- <app-box-cards-choose-tagline
           style="display: contents"
           [boxCards]="boxCard"
-        ></app-box-cards-choose-tagline>
+        ></app-box-cards-choose-tagline> -->
   </ng-container>
   <div class="empowerbox lastempowerbox">
     <h1>

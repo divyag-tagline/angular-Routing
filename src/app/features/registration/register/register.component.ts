@@ -88,7 +88,6 @@ export class RegisterComponent implements OnInit {
         ...this.profileForm.value,
       };
       this.usersDetails.push(data);
-      console.log('this.login.value.email :>> ', this.profileForm.value.roles);
       localStorage.setItem('email', this.profileForm.value.email);
       localStorage.setItem('role', this.profileForm.value.roles);
       this.router.navigateByUrl('/login');

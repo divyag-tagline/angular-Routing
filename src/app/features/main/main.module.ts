@@ -5,24 +5,11 @@ import { MainRoutingModule } from './main-routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { HomeComponent } from './home/home.component';
 
-
-
 @NgModule({
-  declarations: [
-    HomeComponent
-  ],
-  imports: [
-    CommonModule,
-    MainRoutingModule,
-    SharedModule
-  ],
-  exports : [
-    HomeComponent
-  ]
+  declarations: [HomeComponent],
+  imports: [CommonModule, MainRoutingModule, SharedModule],
+  exports: [HomeComponent],
 })
-export class MainModule { 
-  constructor(){
-    console.log("home");
-    
-  }
+export class MainModule {
+  constructor() {}
 }

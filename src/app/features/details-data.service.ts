@@ -445,15 +445,16 @@ export class DetailsDataService {
     portion3: 'All rights reserved by',
     portion4: 'Tagline Infotech LLP',
   };
-  constructor() { }
+
+  constructor() {}
+
   getReviewId(id: number) {
-    // console.log("id", this.ratingStars.find(data => data.id === id));
     return this.ratingStars.find((data) => data.id === id);
   }
   getServicesId(id: number) {
     return this.serviceCardDetails.find((data) => data.id === id);
   }
   getAboutId(id: number) {
-    return this.boxCards.find((data) => data.id === id)
+    return this.boxCards.find((data) => data.id === id);
   }
 }

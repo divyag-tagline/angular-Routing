@@ -6,16 +6,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { ServicesComponent } from './services/services.component';
 import { ServiceDetailComponent } from './service-detail.component';
 
-
 @NgModule({
-  declarations: [
-    ServicesComponent,
-    ServiceDetailComponent
-  ],
-  imports: [
-    CommonModule,
-    ServicesRoutingModule,
-    SharedModule
-  ]
+  declarations: [ServicesComponent, ServiceDetailComponent],
+  imports: [CommonModule, ServicesRoutingModule, SharedModule],
 })
-export class ServicesModule { }
+export class ServicesModule {}

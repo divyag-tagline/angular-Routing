@@ -6,31 +6,27 @@ import { DetailsDataService } from 'src/app/features/details-data.service';
 @Component({
   selector: 'app-about-detail',
   templateUrl: './about-detail.component.html',
-  styleUrls: ['./about-detail.component.scss']
+  styleUrls: ['./about-detail.component.scss'],
 })
 export class AboutDetailComponent implements OnInit {
-  boxCard !: Empowerbox | undefined;
-  aboutId !: number;
-  // constructor(,private route : ActivatedRoute) { 
+  boxCard!: Empowerbox | undefined;
+  aboutId!: number;
+  // constructor(,private route : ActivatedRoute) {
   //     this.route.params.forEach(data=>{
   //     this.boxCard = data
-  //       console.log("details",data);
-  //       console.log('this.boxCard :>> ', this.boxCard);
   //     })
   // }
-  constructor(private detailsDataService: DetailsDataService, private route: ActivatedRoute) {
-    this.route.params.subscribe((data) => {
-      console.log(data);
-    })
-  }
-  
-  ngOnInit(): void {
-    this.route.params.subscribe((data)=>{
-      console.log(data);
-      this.aboutId = data['aboutId']
-      this.boxCard = this.detailsDataService.getAboutId(+ this.aboutId)
-        
-      })
+  constructor(
+    private detailsDataService: DetailsDataService,
+    private route: ActivatedRoute
+  ) {
+    this.route.params.subscribe((data) => {});
   }
 
+  ngOnInit(): void {
+    this.route.params.subscribe((data) => {
+      this.aboutId = data['aboutId'];
+      this.boxCard = this.detailsDataService.getAboutId(+this.aboutId);
+    });
+  }
 }

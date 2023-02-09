@@ -5,16 +5,18 @@ import { DetailsDataService } from '../details-data.service';
 @Component({
   selector: 'app-reviews',
   templateUrl: './reviews.component.html',
-  styleUrls: ['./reviews.component.scss']
+  styleUrls: ['./reviews.component.scss'],
 })
 export class ReviewsComponent implements OnInit {
-  ourClientele !: OurClientele
+  canDeactivate(): boolean {
+    return true;
+  }
+  ourClientele!: OurClientele;
   ratingStars: RatingBox[] = [];
-  constructor(private detailsDataService: DetailsDataService) { }
+  constructor(private detailsDataService: DetailsDataService) {}
 
   ngOnInit(): void {
     this.ourClientele = this.detailsDataService.ourClientele;
     this.ratingStars = this.detailsDataService.ratingStars;
   }
-
 }
