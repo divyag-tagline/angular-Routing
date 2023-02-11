@@ -42,8 +42,6 @@ export class LoginComponent implements OnInit {
         ...this.login.value,
       };
       this.loginDetails.push(data);
-      console.log('this.login.value.email :>> ', this.login.value.email);
-      localStorage.setItem('email', this.login.value.email);
       this.submitted = false;
       this.router.navigateByUrl('/home');
     }

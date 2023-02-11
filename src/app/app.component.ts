@@ -48,6 +48,6 @@ export class AppComponent {
 
   logOut() {
     localStorage.removeItem('email');
-    this.router.navigateByUrl('');
+    this.router.navigateByUrl('/login');
   };
 }
