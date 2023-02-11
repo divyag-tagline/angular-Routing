@@ -13,9 +13,6 @@
             <a class="nav-link dropdown-toggle" [routerLink]="header.link"  id="about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {{header.name}}
             </a>
-            <!-- <ul class="dropdown-menu" aria-labelledby="about">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-            </ul> -->
           </li>
         </ng-template>
         <ng-template #isNotAbout>
@@ -32,7 +29,7 @@
       </ng-container>
     </ul>
     <div class="btnget">
-      <button type="button">
+      <button type="button" (click)="logOut()">
         {{ buttonText }}
       </button>
     </div>

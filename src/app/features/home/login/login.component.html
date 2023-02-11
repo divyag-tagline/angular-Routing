@@ -1,0 +1,71 @@
+<div class="row justify-content-center my-auto d-flex">
+  <div class="col-6 card justify-content-center d-flex mx-auto">
+    <div class="text-center text-info">
+      <h1>Login Page</h1>
+    </div>
+    <div class="card-body">
+      <form class="justify-content-center" [formGroup]="login">
+        <div class="form-group">
+          <label class="h5" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            name="email"
+            formControlName="email"
+            placeholder="Enter Email"
+            required
+          />
+          <span
+            class="text-danger"
+            *ngIf="
+              (loginControls['email'].touched &&
+                loginControls['email'].pristine) ||
+              (submitted &&
+                loginControls['email'].pristine &&
+                loginControls['email'].invalid)
+            "
+          >
+            Email is required
+          </span>
+        </div>
+        <div class="form-group mt-2 mb-2">
+          <label class="h5" for="password">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Password"
+            formControlName="password"
+            required
+          />
+          <span
+            class="text-danger"
+            *ngIf="
+              (loginControls['password'].touched &&
+                loginControls['password'].pristine) ||
+              (submitted &&
+                loginControls['password'].pristine &&
+                loginControls['password'].invalid)
+            "
+          >
+            Password is required
+          </span>
+        </div>
+        <button
+          class="btn btn-info text-white w-100"
+          (click)="onSubmit()"
+          type="submit"
+        >
+          Sign In
+        </button>
+        <label class="checkbox pull-left">
+          <input type="checkbox" value="remember-me" />
+          Remember me
+        </label>
+        <a href="#" class="pull-right need-help">Need help? </a
+        ><span class="clearfix"></span>
+      </form>
+    </div>
+  </div>
+</div>

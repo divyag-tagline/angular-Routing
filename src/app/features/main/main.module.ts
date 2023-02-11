@@ -20,4 +20,9 @@ import { HomeComponent } from './home/home.component';
     HomeComponent
   ]
 })
-export class MainModule { }
+export class MainModule { 
+  constructor(){
+    console.log("home");
+    
+  }
+}
